@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 import '../../../../../core/utils/styles.dart';
 
 class BookRating extends StatelessWidget {
@@ -19,7 +20,7 @@ class BookRating extends StatelessWidget {
         ),
         const SizedBox(width: 6.3),
         Text(
-          '${rate ?? 'N/a'}',
+          '${rate ?? 'N/A'}',
           style: Style.textStyle16,
         ),
         const SizedBox(width: 5,),

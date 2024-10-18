@@ -31,7 +31,8 @@ class HomeRepoImpl extends HomeRepo {
   @override
   Future<Either<Failure, List<BookModel>>> getLastUpdatedBooks() async {
     try {
-      var data = await apisServices.get(endPoint: 'volumes?Filtering=free-ebooks&q=fantasy+fiction');
+      var data = await apisServices.get(
+          endPoint: 'volumes?Filtering=free-ebooks&q=anime');
       List<BookModel> books = [];
       for (var book in data['items']) {
         books.add(BookModel.fromJson(book));
